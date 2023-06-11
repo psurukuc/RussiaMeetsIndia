@@ -27,19 +27,8 @@ gulp.task('minify-js', function () {
         .pipe(gulp.dest('./js'));
 });
 
-// gulp.task('webserver', function() {
-//     gulp.src('/Users/psurukuc/Applications/RussiaMeetsIndia/')
-//       .pipe(webserver({
-//         livereload: true,
-//         directoryListing: true,
-//         open: true,
-//         fallback: 'index.html'
-//       }));
-// });
-// gulp.task('default', gulp.series('sass', 'minify-js', 'webserver'));
-
 gulp.task('webserver', function() {
-    gulp.src('')
+    gulp.src('/Users/psurukuc/Applications/RussiaMeetsIndia/')
       .pipe(webserver({
         livereload: true,
         directoryListing: true,
@@ -47,4 +36,15 @@ gulp.task('webserver', function() {
         fallback: 'index.html'
       }));
 });
-gulp.task('default', gulp.series('sass', 'minify-js'));
+gulp.task('default', gulp.series('sass', 'minify-js', 'webserver'));
+
+// gulp.task('webserver', function() {
+//     gulp.src('')
+//       .pipe(webserver({
+//         livereload: true,
+//         directoryListing: true,
+//         open: true,
+//         fallback: 'index.html'
+//       }));
+// });
+// gulp.task('default', gulp.series('sass', 'minify-js'));

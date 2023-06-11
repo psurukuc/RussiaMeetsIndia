@@ -253,7 +253,7 @@ Hero
 ========================================================================== */
 .hero {
   min-height: 750px;
-  max-height: 1000px;
+  max-height: 1200px;
   background: url('../img/IMG.jpg') center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -261,11 +261,11 @@ Hero
   background-size: cover;
   position: relative;
 
-  /*.rsvp-btn {
-    position: absolute;
-    bottom: 100px;
-    left: 50%;
-  }*/
+  // .rsvp-btn {
+  //   position: absolute;
+  //   bottom: 1000px;
+  //   left: 50%;
+  // }
   .down-arrow a {
     color: $txt-light;
   }
@@ -320,7 +320,7 @@ header {
     display: inline-block;
   }
   .logo img {
-    height: 30px;
+    height: 50px;
   }
   ul.primary-nav {
     margin: 0 0 0 75px;
@@ -367,11 +367,11 @@ header {
 }
 .down-arrow {
   color: #fff;
-  font-size: 30px;
+  font-size: 60px;
   position: absolute;
   bottom: 30px;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translateX(100%);
 }
 
 /* ==========================================================================
