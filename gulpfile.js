@@ -28,12 +28,12 @@ gulp.task('minify-js', function () {
 });
 
 gulp.task('webserver', function() {
-    gulp.src('/Users/psurukuc/Applications/RussiaMeetsIndia/')
+    gulp.src('')
       .pipe(webserver({
         livereload: true,
         directoryListing: true,
         open: true,
-        fallback: 'index.html'
+        fallback: './index.html'
         // port: 6000	// set a port to avoid conflicts with other local apps
       }));
 });
@@ -49,4 +49,4 @@ gulp.task('webserver', function() {
 
 
 // default task
-gulp.task('default', gulp.series('sass', 'minify-js', 'webserver'));
+gulp.task('default', gulp.series('sass', 'minify-js'));
