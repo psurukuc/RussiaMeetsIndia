@@ -163,6 +163,7 @@ Animations
 Waypoinsts
 ========================================================================== */
 .wp1, .wp2, .wp3, .wp4, .wp5, .wp6, .wp7, .wp8, .wp9 {
+  vertical-align: bottom;
   visibility: hidden
 }
 .wp8, .wp9 {
@@ -251,7 +252,8 @@ Navigation
 Hero
 ========================================================================== */
 .hero {
-  min-height: 900px;
+  min-height: 750px;
+  max-height: 1000px;
   background: url('../img/IMG.jpg') center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -561,7 +563,7 @@ Features-stack
   }
 
   .time {
-    font-size: 13px;
+    font-size: 18px;
     font-style: italic;
     text-transform: lowercase;
     color: $txt-primary;
@@ -751,7 +753,7 @@ Google map
 ========================================================================== */
 #map-canvas {
   height: 500px;
-  width: 45%;
+  width: 100%;
 }
 #map-content-wrapper {
   position: relative;
@@ -794,11 +796,11 @@ RSVP form
       padding: 15px 0;
       border-radius: 3px;
       width: 100%;
-      font-size: 13px;
+      font-size: 18px;
     }
     .form-input-group {
       width: 100%;
-      height: 55px;
+      height: 100px;
       margin: 0 auto 10px;
       -moz-border-radius: 5px;
       -webkit-border-radius: 5px;
