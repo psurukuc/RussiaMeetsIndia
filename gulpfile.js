@@ -28,25 +28,23 @@ gulp.task('minify-js', function () {
 });
 
 gulp.task('webserver', function() {
-    gulp.src('')
+    gulp.src('/Users/psurukuc/Applications/RussiaMeetsIndia/')
       .pipe(webserver({
         livereload: true,
         directoryListing: true,
         open: true,
-        fallback: './index.html'
-        // port: 6000	// set a port to avoid conflicts with other local apps
+        fallback: 'index.html'
       }));
 });
+gulp.task('default', gulp.series('sass', 'minify-js', 'webserver'));
 
-// gulp.task('server', function() {
-//     gulp.src('/Users/psurukuc/Applications/RussiaMeetsIndia/')	
-//       .pipe(server({
+// gulp.task('webserver', function() {
+//     gulp.src('')
+//       .pipe(webserver({
 //         livereload: true,
+//         directoryListing: true,
 //         open: true,
-//         port: 6000	// set a port to avoid conflicts with other local apps
+//         fallback: 'index.html'
 //       }));
-//   });
-
-
-// default task
-gulp.task('default', gulp.series('sass', 'minify-js'));
+// });
+// gulp.task('default', gulp.series('sass', 'minify-js'));
