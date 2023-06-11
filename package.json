@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com:rampatra/wedding-website.git"
+    "url": "git+ssh://git@github.com:psurukuc/RussiaMeetsIndia.git"
   },
   "keywords": [
     "wedding",
@@ -17,13 +17,14 @@
   ],
   "author": "Ram Patra",
   "license": "GPL-3.0",
-  "homepage": "https://github.com/rampatra/wedding-website",
+  "homepage": "https://github.com/psurukuc/RussiaMeetsIndia",
   "devDependencies": {
     "chokidar": "^3.5.3",
     "gulp": "^4.0.2",
     "gulp-rename": "^1.4.0",
     "gulp-sass": "^5.0.0",
     "gulp-uglify": "^3.0.2",
+    "gulp-webserver": "^0.9.1",
     "sass": "^1.25.0"
   },
   "dependencies": {
