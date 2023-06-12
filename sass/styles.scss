@@ -289,18 +289,19 @@ Hero
 }
 .navigation {
   transition: all 300ms ease-in-out;
+  // background-color: $header-banner;
   position: fixed;
   width: 100%;
   z-index: 999;
 }
 .fixed {
   position: fixed;
-  background-color: rgba(247, 220, 113, 0.598);
+  background-color: $header-banner;
   z-index: 999;
   width: 100%;
 }
 header {
-  padding: 50px 0;
+  padding: 0px 0;
   border-bottom: solid 0px rgba(17, 15, 6, 0.598);
   position: relative;
   width: 100%;
@@ -308,7 +309,7 @@ header {
   transition: padding 300ms ease-in-out;
 
   a {
-    color: $txt-light;
+    color: $header-txt;
     text-transform: uppercase;
     font-size: $nav-font-size;
 
@@ -323,7 +324,7 @@ header {
     height: 50px;
   }
   ul.primary-nav {
-    margin: 0 0 0 75px;
+    margin: 0 0 0 20px;
     padding: 0;
 
     li {
@@ -361,7 +362,8 @@ header {
   .member-actions {
     position: absolute;
     right: 0;
-    top: 41px;
+    top: 20px;
+    font-weight: bold;
     transition: all 300ms ease-in-out;
   }
 }
@@ -661,7 +663,9 @@ Engagement Pics
 #eng-pics {
   img {
     width: 100%;
-    height: auto;
+    max-height: 250px; 
+    object-fit: cover; 
+    object-position: center;
     -moz-transition: all 300ms ease-in-out;
     -o-transition: all 300ms ease-in-out;
     -webkit-transition: all 300ms ease-in-out;

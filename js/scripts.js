@@ -245,7 +245,7 @@ function initMap() {
     var map = new google.maps.Map(document.getElementById('map-canvas'), {
         zoom: 15,
         center: location,
-        scrollwheel: false
+        scrollwheel: true
     });
 
     var marker = new google.maps.Marker({
