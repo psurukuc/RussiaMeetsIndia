@@ -23,17 +23,17 @@ $(document).ready(function () {
         offset: '75%'
     });
     $('.wp5').waypoint(function () {
-        $('.wp5').addClass('animated fadeInLeft');
+        $('.wp5').addClass('animated fadeInUp');
     }, {
         offset: '75%'
     });
     $('.wp6').waypoint(function () {
-        $('.wp6').addClass('animated fadeInRight');
+        $('.wp6').addClass('animated tada');
     }, {
         offset: '75%'
     });
     $('.wp7').waypoint(function () {
-        $('.wp7').addClass('animated fadeInUp');
+        $('.wp7').addClass('animated heartBeat');
     }, {
         offset: '75%'
     });
@@ -170,9 +170,20 @@ $(document).ready(function () {
         $('#map-content').toggleClass('toggle-map-content');
         $('#btn-show-content').toggleClass('toggle-map-content');
     });
+    
+    $('#btn-show-map-second').click(function () {
+        $('#map-content-second').toggleClass('toggle-map-content-second');
+        $('#btn-show-content-second').toggleClass('toggle-map-content-second');
+    });
+
     $('#btn-show-content').click(function () {
         $('#map-content').toggleClass('toggle-map-content');
         $('#btn-show-content').toggleClass('toggle-map-content');
+    });
+
+    $('#btn-show-content-second').click(function () {
+        $('#map-content-second').toggleClass('toggle-map-content-second');
+        $('#btn-show-content-second').toggleClass('toggle-map-content-second');
     });
 
     /********************** Add to Calendar **********************/
@@ -272,12 +283,12 @@ function initSecondMap() {
     var la_fiesta = {lat: 4.238659393767726, lng: -7.11209494663532};
     var map = new google.maps.Map(document.getElementById('map-canvas-second'), {
         zoom: 15,
-        center: la_fiesta,
-        scrollwheel: false
+        center: location,
+        scrollwheel: true
     });
 
     var marker = new google.maps.Marker({
-        position: la_fiesta,
+        position: location,
         map: map
     });
 }
