@@ -253,9 +253,10 @@ Hero
 ========================================================================== */
 .hero {
   top: 50px;
-  min-height: 750px;
-  max-height: 1200px;
-  background: url('../img/IMG.jpg') center center;
+  // width: 100%;
+  min-height: 800px;
+  // max-height: 1200px;
+  background: url('../img/IMG.jpg')  no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
