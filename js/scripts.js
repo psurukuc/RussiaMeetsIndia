@@ -93,25 +93,28 @@ $(document).ready(function () {
                 $('section.navigation').addClass('fixed');
                 $('header').css({
                     "border-bottom": "none",
-                    "padding": "35px 0"
+                    "top": "0px",
+                    "padding": "5px 0"
                 });
                 $('header .member-actions').css({
-                    "top": "26px",
+                    "top": "0px",
                 });
                 $('header .navicon').css({
-                    "top": "34px",
+                    "top": "0px",
                 });
             } else {
                 $('section.navigation').removeClass('fixed');
                 $('header').css({
-                    "border-bottom": "solid 1px rgba(255, 255, 255, 0.2)",
-                    "padding": "50px 0"
+                    "border-bottom": "none",
+                    // "border-bottom": "solid 1px rgba(255, 255, 255, 0.2)",
+                    "top": "0px",
+                    "padding": "0px 0"
                 });
                 $('header .member-actions').css({
-                    "top": "41px",
+                    "top": "0px",
                 });
                 $('header .navicon').css({
-                    "top": "48px",
+                    "top": "0px",
                 });
             }
         });
@@ -256,7 +259,7 @@ function initMap() {
     var map = new google.maps.Map(document.getElementById('map-canvas'), {
         zoom: 15,
         center: location,
-        scrollwheel: true
+        scrollwheel: false
     });
 
     var marker = new google.maps.Marker({
@@ -280,11 +283,11 @@ function initBBSRMap() {
 }
 
 function initSecondMap() {
-    var la_fiesta = {lat: 4.238659393767726, lng: -7.11209494663532};
+    var la_fiesta = {lat: 41.238659393767726, lng: -73.11209494663532};
     var map = new google.maps.Map(document.getElementById('map-canvas-second'), {
         zoom: 15,
         center: location,
-        scrollwheel: true
+        scrollwheel: false
     });
 
     var marker = new google.maps.Marker({
