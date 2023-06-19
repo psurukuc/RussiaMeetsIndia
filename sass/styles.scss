@@ -43,6 +43,9 @@ body {
   -webkit-text-size-adjust: 100%;
   //fix for iOS
 }
+p{
+  text-align: justify;
+} 
 *:focus {
   outline: none !important;
 }
@@ -294,9 +297,9 @@ Hero
 }
 
 .hero_event {
-  min-height: 750px;
-  max-height: 1200px;
-  background: url('../img/IMG_JB.jpg') center center;
+  min-height: 800px;
+  // max-height: 1200px;
+  background: url('../img/IMG_JB.jpg') no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -432,7 +435,7 @@ Intro
   }
 }
 #intro p {
-  text-align: center;
+  text-align: justify;
 }
 
 /* ==========================================================================
