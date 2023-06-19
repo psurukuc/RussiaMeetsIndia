@@ -89,34 +89,34 @@ $(document).ready(function () {
         $(window).scroll(function () {
             var scroll = $(window).scrollTop();
 
-            if (scroll >= 20) {
-                $('section.navigation').addClass('fixed');
-                $('header').css({
-                    "border-bottom": "none",
-                    "top": "0px",
-                    "padding": "5px 0"
-                });
-                $('header .member-actions').css({
-                    "top": "0px",
-                });
-                $('header .navicon').css({
-                    "top": "0px",
-                });
-            } else {
-                $('section.navigation').removeClass('fixed');
-                $('header').css({
-                    "border-bottom": "none",
-                    // "border-bottom": "solid 1px rgba(255, 255, 255, 0.2)",
-                    "top": "0px",
-                    "padding": "0px 0"
-                });
-                $('header .member-actions').css({
-                    "top": "0px",
-                });
-                $('header .navicon').css({
-                    "top": "0px",
-                });
-            }
+            // if (scroll >= 20) {
+            //     $('section.navigation').addClass('fixed');
+            //     $('header').css({
+            //         "border-bottom": "none",
+            //         "top": "0px",
+            //         "padding": "5px 0"
+            //     });
+            //     $('header .member-actions').css({
+            //         "top": "0px",
+            //     });
+            //     $('header .navicon').css({
+            //         "top": "0px",
+            //     });
+            // } else {
+            //     $('section.navigation').removeClass('fixed');
+            //     $('header').css({
+            //         "border-bottom": "none",
+            //         // "border-bottom": "solid 1px rgba(255, 255, 255, 0.2)",
+            //         "top": "0px",
+            //         "padding": "0px 0"
+            //     });
+            //     $('header .member-actions').css({
+            //         "top": "0px",
+            //     });
+            //     $('header .navicon').css({
+            //         "top": "0px",
+            //     });
+            // }
         });
     });
     /***************** Smooth Scrolling ******************/
