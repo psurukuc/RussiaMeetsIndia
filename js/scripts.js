@@ -201,17 +201,17 @@ $(document).ready(function () {
             title: "Katya and Pranava's Wedding",
 
             // Event start date
-            start: new Date('Sep 31, 2023 8:00'),
+            start: new Date('Aug 31, 2023 10:00'),
 
             // Event duration (IN MINUTES)
             // duration: 120,
 
             // You can also choose to set an end time
             // If an end time is set, this will take precedence over duration
-            end: new Date('Oct 16, 2023 16:00'),
+            end: new Date('Aug 31, 2023 12:00'),
 
             // Event Address
-            address: 'Hindu Cultural Society, Startford, CT',
+            address: 'Hindu Cultural Society, Stratford, CT',
 
             // Event Description
             description: "We can't wait to see you on our big day. For any queries or issues, please contact Pranava at +1(630)423-2468."
@@ -230,7 +230,7 @@ $(document).ready(function () {
 
         if (MD5($('#invite_code').val()) !== 'b0e53b10c1f55ede516b240036b88f40'
             && MD5($('#invite_code').val()) !== '2ac7f43695eb0479d5846bb38eec59cc') {
-            $('#alert-wrapper').html(alert_markup('danger', '<strong>Sorry!</strong> Your invite code is incorrect.'));
+            $('#alert-wrapper').html(alert_markup('danger', '<strong>Sorry!</strong> Your invite code is incorrect. Please contact Pranava at (630)-423-2468.'));
         } else {
             $.post('https://script.google.com/macros/s/AKfycbwMCpgQhSezI5dmPiE8EijWdaL5SptyYt5KifMI7IoyzzQpffX3ML05Yy4OQ-Jw_zvnFA/exec', data)
                 .done(function (data) {

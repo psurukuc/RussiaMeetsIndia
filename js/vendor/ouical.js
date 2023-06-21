@@ -99,7 +99,7 @@
             google: calendarGenerators.google(event),
             yahoo: calendarGenerators.yahoo(event),
             ical: calendarGenerators.ical(event),
-            outlook: calendarGenerators.outlook(event)
+            outlook: calendarGenerators.outlook(event),
         };
     };
 
