@@ -190,7 +190,63 @@ $(document).ready(function () {
     });
 
     /********************** Add to Calendar **********************/
-    var myCalendar = createCalendar({
+    var myCalendar1 = createCalendar({
+        options: {
+            class: '',
+            // You can pass an ID. If you don't, one will be generated for you
+            id: ''
+        },
+        data: {
+            // Event title
+            title: "Katya and Pranava's Pre-wedding",
+
+            // Event start date
+            start: new Date('Aug 31, 2023 10:00 GMT-04:00'),
+
+            // Event duration (IN MINUTES)
+            // duration: 120,
+
+            // You can also choose to set an end time
+            // If an end time is set, this will take precedence over duration
+            end: new Date('Aug 31, 2023 21:00 GMT-04:00'),
+
+            // Event Address
+            address: 'Hindu Cultural Society, Stratford, CT',
+
+            // Event Description
+            description: "We can't wait to see you on our big day. For any queries or issues, please contact Pranava at +1(630)423-2468."
+        }
+    });
+
+    var myCalendar2 = createCalendar({
+        options: {
+            class: '',
+            // You can pass an ID. If you don't, one will be generated for you
+            id: ''
+        },
+        data: {
+            // Event title
+            title: "Katya and Pranava's Pre-wedding",
+
+            // Event start date
+            start: new Date('Aug 31, 2023 18:00 GMT-04:00'),
+
+            // Event duration (IN MINUTES)
+            // duration: 120,
+
+            // You can also choose to set an end time
+            // If an end time is set, this will take precedence over duration
+            end: new Date('Aug 31, 2023 21:00 GMT-04:00'),
+
+            // Event Address
+            address: 'Hindu Cultural Society, Stratford, CT',
+
+            // Event Description
+            description: "We can't wait to see you on our big day. For any queries or issues, please contact Pranava at +1(630)423-2468."
+        }
+    });
+
+    var myCalendar3 = createCalendar({
         options: {
             class: '',
             // You can pass an ID. If you don't, one will be generated for you
@@ -201,14 +257,14 @@ $(document).ready(function () {
             title: "Katya and Pranava's Wedding",
 
             // Event start date
-            start: new Date('Aug 31, 2023 10:00'),
+            start: new Date('Sep 1, 2023 9:30 GMT-04:00'),
 
             // Event duration (IN MINUTES)
             // duration: 120,
 
             // You can also choose to set an end time
             // If an end time is set, this will take precedence over duration
-            end: new Date('Aug 31, 2023 12:00'),
+            end: new Date('Sep 1, 2023 13:00 GMT-04:00'),
 
             // Event Address
             address: 'Hindu Cultural Society, Stratford, CT',
@@ -218,7 +274,38 @@ $(document).ready(function () {
         }
     });
 
-    $('#add-to-cal').html(myCalendar);
+    var myCalendar4 = createCalendar({
+        options: {
+            class: '',
+            // You can pass an ID. If you don't, one will be generated for you
+            id: ''
+        },
+        data: {
+            // Event title
+            title: "Katya and Pranava's Wedding Reception",
+
+            // Event start date
+            start: new Date('Sep 16, 2023 16:00 GMT-04:00'),
+
+            // Event duration (IN MINUTES)
+            // duration: 120,
+
+            // You can also choose to set an end time
+            // If an end time is set, this will take precedence over duration
+            end: new Date('Sep 16, 2023 21:00 GMT-04:00'),
+
+            // Event Address
+            address: 'TBD, We will contact you with the details of the event location',
+
+            // Event Description
+            description: "We can't wait to see you on our big day. For any queries or issues, please contact Pranava at +1(630)423-2468."
+        }
+    });
+
+    $('#add-to-cal1').html(myCalendar1);
+    $('#add-to-cal2').html(myCalendar2);
+    $('#add-to-cal3').html(myCalendar3);
+    $('#add-to-cal4').html(myCalendar4);
 
 
     /********************** RSVP **********************/
