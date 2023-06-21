@@ -315,11 +315,12 @@ $(document).ready(function () {
 
         $('#alert-wrapper').html(alert_markup('info', '<strong>Just a sec!</strong> We are saving your details.'));
 
-        if (MD5($('#invite_code').val()) !== 'b0e53b10c1f55ede516b240036b88f40'
-            && MD5($('#invite_code').val()) !== '2ac7f43695eb0479d5846bb38eec59cc') {
+        if (MD5($('#invite_code').val()) !== '2391866148a82a62ce1255fd5a78181d'
+            && MD5($('#invite_code').val()) !== '0486d7f1d0cd05b7f030b3a34bcae36e'
+            && MD5($('#invite_code').val()) !== '3c1a9975efe49ddb18c666596c3f5e19') {
             $('#alert-wrapper').html(alert_markup('danger', '<strong>Sorry!</strong> Your invite code is incorrect. Please contact Pranava at (630)-423-2468.'));
         } else {
-            $.post('https://script.google.com/macros/s/AKfycbwMCpgQhSezI5dmPiE8EijWdaL5SptyYt5KifMI7IoyzzQpffX3ML05Yy4OQ-Jw_zvnFA/exec', data)
+            $.post('https://script.google.com/macros/s/AKfycbz_XUzXjGJ7vtWtiJc_AXi2yO394prZm83jJoGKoFjOmj7T8hhACSzgIVOsvOZLNQrnRA/exec', data)
                 .done(function (data) {
                     console.log(data);
                     if (data.result === "error") {
