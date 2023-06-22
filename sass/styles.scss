@@ -785,20 +785,22 @@ Embed video
 Google map
 ========================================================================== */
 #map-canvas {
-  height: 500px;
+  height: 400px;
   width: 100%;
 }
 #map-canvas-second {
-  height: 500px;
+  height: 400px;
   width: 100%;
 }
 #map-content-wrapper {
   position: relative;
+  height: 350px;
   margin-top: -502px;
-  margin-bottom: 150px;
+  margin-bottom: 50px;
 }
 #map-content-wrapper-second {
   position: relative;
+  height: 350px;
   margin-top: -502px;
   margin-bottom: 150px;
 }
@@ -812,7 +814,7 @@ Google map
 #map-content-second {
   margin-top: 40px;
   padding: 50px 60px;
-  background: #fff;
+  background: #ccbbbb;
   -webkit-transition: opacity 0.5s, visibility 0.6s, margin-top 0.5s;
   transition: opacity 0.5s, visibility 0.6s, margin-top 0.5s;
 }
@@ -827,7 +829,7 @@ Google map
 }
 #btn-show-content-second {
   padding: 20px;
-  background: #fff;
+  background: #adacac;
   cursor: pointer;
   font-size: 18px;
   display: inline-block;
