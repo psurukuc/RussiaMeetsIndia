@@ -320,7 +320,7 @@ $(document).ready(function () {
             && MD5($('#invite_code').val()) !== '3c1a9975efe49ddb18c666596c3f5e19') {
             $('#alert-wrapper').html(alert_markup('danger', '<strong>Sorry!</strong> Your invite code is incorrect. Please contact Pranava at (630)-423-2468.'));
         } else {
-            $.post('https://script.google.com/macros/s/AKfycbz_XUzXjGJ7vtWtiJc_AXi2yO394prZm83jJoGKoFjOmj7T8hhACSzgIVOsvOZLNQrnRA/exec', data)
+            $.post('https://script.google.com/macros/s/AKfycbwfj3MKjp3Se1JikEBGDNbrVAUuP2qUwcLZYhBusFKDlUds5Rk7356aapYGjFkZt23iyA/exec', data)
                 .done(function (data) {
                     console.log(data);
                     if (data.result === "error") {
